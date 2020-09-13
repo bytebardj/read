@@ -1,6 +1,5 @@
 body { background-color: rgba(153, 255, 153, 0.1); }
-h1 { font-size:1.3em; }
-h2 { font-size:1.2em; }
-.div{width: 300px;}
+.div {width: 300px;}
 .div1 {word-break: normal;}
 .div2 {font-size: 12px; }
+.div3 {font-size: 28px; }
