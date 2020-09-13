@@ -1,7 +1,6 @@
-body { font: 24px verdana, arial, helvetica, sans-serif; background-color: rgba(153, 255, 153, 0.1); }
+body { background-color: rgba(153, 255, 153, 0.1); }
 h1 { font-size:1.3em; }
 h2 { font-size:1.2em; }
 .div{width: 300px;}
 .div1 {word-break: normal;}
 .div2 {font-size: 12px; }
-canvas { border: 5px solid black;/* This line is using for index2.html */
