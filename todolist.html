@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A ToDo list</title>
+    <title>My Shopping list</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="header">
-        <h1>:: ToDo ::</h1>
+        <h1>:: Things to buy ::</h1>
     </div>
         <div class="add-task">
-            <input type="text" id="new-task-input" placeholder="add a task...">
+            <input type="text" id="new-task-input" placeholder="add an item...">
             <button class="add-task-btn">+</button>
         </div>
+        <ul id="myList2">
+            <li class="task1">
+            <input type="checkbox">
+                Water</li><li>            <input type="checkbox">
+                    Milk</li></ul>
+        <button onclick="myFunction()">Copy Milk to list</button>
     <div class="task-list-header">
-        <h1>:: Tasks ::</h1>
+        <h1>:: List ::</h1>
         <button class="remove-complete-btn">Clear Complete</button>
+        <button onclick="window.location.reload();">Clear All</button>
     </div>
     <div class="task-list-wrapper">
-        <ol class="task-list">
+        <ol class="task-list task-list-1" id="myList1">
 
         </ol>
+        <!-- <ul id="myList1"></ul> -->
     </div>
 </div>
     <template id="task-template">
@@ -34,6 +42,10 @@
             </label>
         </li>
     </template>
-<script type="text/javascript" src="new.js"></script>
+    <button id="alert1" onclick=""></button>
+<script type="text/javascript" src="new.js">
+
+</script>
+
 </body>
 </html>
