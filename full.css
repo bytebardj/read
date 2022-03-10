@@ -21,12 +21,12 @@ h1 {
 }
 
 .rollbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-area:auto;
+  justify-content:flex-end;
+  align-items:flex-end;
 }
 
 .sizeofbtn {
   font-size:xx-large;
-
 }
