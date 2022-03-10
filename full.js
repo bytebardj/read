@@ -7,7 +7,7 @@ let savednumberhere = document.getElementById('rollednumber');
 let numbercounting = 0;
 
 function letisroll() {
-  numbercounting = Math.floor(Math.random() * 37) || '00';
+  numbercounting = Math.floor((Math.random() * 37) + 0) || 'OO';
   numberhere.textContent = numbercounting;
 
   let tosaveit = numbercounting + ' - ';
