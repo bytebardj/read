@@ -1,39 +1,37 @@
-
-
-// let fruit = ['apple','orange','apple','apple','orange'];
-// let appleonit = document.getElementById('apple-shelf');
-// let orangeonit = document.getElementById('orange-shelf');
-
-// function fruitselection(){
-//   for (let i = 0; i < fruit.length; i++) {
-//     if (fruit[i] === 'apple'){
-//       appleonit.textContent += ' apple';
-//     } else if (fruit[i] === 'orange') {
-//       orangeonit.textContent += ' orange'
-//     }
-// };
-// }
-
-// fruitselection()
-
-// // appleonit.textContent = fruit[0] + ' ' + fruit[2] + ' ' + fruit[3];
-// // orangeonit.textContent = fruit[1] + ' ' + fruit[4];
-const mybuybutton = document.getElementById('container');
-const thankyouhere = document.getElementById('thankyouhere');
 let myLeads = [];
-const ulEl = document.getElementById('ul-el');
-
-const showsaved = document.getElementById('showsavedarea');
-const inputbutton = document.getElementById('input-btn');
 const inputtext = document.getElementById('input-el');
+const inputbutton = document.getElementById('input-btn');
+const ulEl = document.getElementById('ul-el');
+const showsaved = document.getElementById('showsavedarea');
+const deletebutton = document.getElementById('delete-btn');
+/*
+let abc = `["www.1.com"]`;
+abc = JSON.parse(abc)  // array to string
+abc.push("www.2.com") //push
+abc = JSON.stringify(abc); // array to string
+console.log(typeof abc) // verify it's a string
+*/
+
+let saveddata = JSON.parse(localStorage.getItem('myLeads'));
+if(saveddata) {
+  myLeads = saveddata
+  renderLeads()
+}
+
+deletebutton.addEventListener('click', function(){
+  localStorage.clear();
+  myLeads = [];
+  renderLeads();
+})
 
 
 inputbutton.addEventListener('click', function(){
   if(invalidinput()){
   myLeads.push(inputtext.value)
   inputtext.value = '';
+  localStorage.setItem('myLeads', JSON.stringify(myLeads));
   renderLeads();
-}
+ }
 })
 
 
@@ -41,6 +39,7 @@ inputtext.addEventListener('keyup', (e) => {
   if(e.key === 'Enter' && invalidinput() ){
     myLeads.push(inputtext.value)
     inputtext.value = '';
+    localStorage.setItem('myLeads', JSON.stringify(myLeads));
   renderLeads();
   }
 });

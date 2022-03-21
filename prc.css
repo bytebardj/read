@@ -32,9 +32,9 @@ button{
 }
 
 input {
-  width: 100%; /* 100% + 10px + 10px */
+  width: 600px; /* 100% + 10px + 10px */
   padding: 10px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* border-radius: 10px; */
   border:2px solid green;
   border-color: green;
