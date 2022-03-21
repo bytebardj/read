@@ -1,32 +1,28 @@
 body {
-  background-color:black;
-  background-image: url('background-roller.jpg');
+  background-image: url('blackjack.jpg');
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-h2 {
-  display: grid;
-  place-content: center;
-  background-color: blanchedalmond;
-  margin: 0px 0px 0px 0px;
+.styleforbtn {
 
-  /* visibility: hidden; */
 }
 
 h1 {
-  display: grid;
-  place-content: center;
-  background-color:darkseagreen;
-  margin: 0px 0px 0px 0px;
+  color: yellow;
 }
 
-.rollbtn {
-  display: grid;
-  grid-area:auto;
-  justify-content:flex-end;
-  align-items:flex-end;
+h2 {
+  color: antiquewhite;
 }
 
-.sizeofbtn {
-  font-size:xx-large;
+.mainpart {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.btn {
+
+  font-size: x-large;
 }

@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="full.css">  <title>Document</title>
 </head>
 <body>
-  <h1> -  - THE NUNMBER IS - - </h1>
-  <h1 id="numbershowing">0</h1>
-  <br>
-  <div class="rollbtn">
-    <button class="sizeofbtn" onclick="letisroll()" >Let's ROLL!!!</button>
-  </div>
-  <br>
-  <h2> -  - Latest number (Old  => New) - - </h2>
-  <h2 id="rollednumber"></h2>
+  <div class="mainpart">
+    <h1>BLACKJACK</h1>
+    <h2 id="message-el">Want to play a round?</h2>
+    <h2 id="cards-el">Cards:</h2>
+    <h2 id="sum-el">Sum:</h2>
+<div class="styleforbtn">
+    <button class="btn" onclick="startgame()" >Start</button>
+<button class="btn" onclick="newcard()" >New Card</button>
+<h2 id="player-el"></h2>
+<h2 id="cashdisplay"></h2>
+</div>
+</div>
   <script src="full.js"></script>
 </body>
 </html>
