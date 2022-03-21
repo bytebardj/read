@@ -20,9 +20,15 @@ a{
 }
 
 input {
-  width: 400px; /* 100% + 10px + 10px */
+  width: 500px; /* 100% + 10px + 10px */
   padding: 10px;
   box-sizing: border-box;
   /* border-radius: 10px; */
   /* border:2px solid green; */
+}
+
+#bottom {
+  display: grid;
+  grid:1fr 1fr 1fr;
+  grid
 }
