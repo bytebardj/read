@@ -32,8 +32,8 @@ function renderitems(){
   let listitems = '';
   for (let i = 0; i < listArray.length; i++) {
     listitems += `<li>${listArray[i]}: 
-  <a target='_blank' href=https://shop.countdown.co.nz/shop/searchproducts?search='${listArray[i]}'>
-  Countdown</a><br><a target='_blank' href=https://www.paknsave.co.nz/shop/Search?q='${listArray[i]}'>Pak n Save</a> / <a target='_blank' href=https://www.newworld.co.nz/shop/Search?q='${listArray[i]}'>New World</a> 
+  <a target='_blank' href=https://shop.countdown.co.nz/shop/searchproducts?search=${listArray[i]}>
+  Countdown</a><br><a target='_blank' href=https://www.paknsave.co.nz/shop/Search?q=${listArray[i]}>Pak n Save</a> / <a target='_blank' href=https://www.newworld.co.nz/shop/Search?q=${listArray[i]}>New World</a> 
   </li><br>`;
     listshere.innerHTML = listitems;}
 }
