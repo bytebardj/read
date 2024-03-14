@@ -1,9 +1,0 @@
-{
-  "manifest_version": 3,
-  "version": "0.1",
-  "name": "Things to buy!",
-  "action":{
-    "default_popup": "list.html",
-    "default_icon": "shopping.png"
-  }
-}
